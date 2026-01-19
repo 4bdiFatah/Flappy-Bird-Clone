@@ -60,7 +60,6 @@ window.onload = ()  => {
 function update() {
     if (gameOver) return;
     requestAnimationFrame(update);
-    localStorage.clear();
     // draw canvas //
     ctx.drawImage(backgroundImg, 0, 0, canvas.width, canvas.height);
 
@@ -154,3 +153,4 @@ function endGame() {
     location.reload();
 
 };
+
